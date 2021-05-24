@@ -1,0 +1,311 @@
+    @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:500i|Dancing+Script|Roboto&display=swap');
+    @font-face {
+        font-family: 'Avenier Next';
+        src: url('../font/AvenirNextLTPro-Cn.otf');
+    }
+    
+    @font-face {
+        font-family: 'Raleway';
+        src: url('../font/Raleway-Regular.ttf');
+    }
+    
+    @font-face {
+        font-family: 'Inspiration';
+        src: url('../font/WalkingStonesPersonalUse-3npX.ttf');
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+    }
+    
+    #particles-js {
+        height: 100%;
+        background-color: #f8f1f8;
+        width: 100%;
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+    
+    section h1 {
+        font-size: 64px;
+        font-family: 'Alegreya Sans';
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        background: linear-gradient( #3388a7, #1b485a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: brightness(1.2) drop-shadow(1px 8px 30px #5f6263);
+    }
+    
+    section h2 {
+        font-size: 80px;
+        font-family: 'Alegreya Sans';
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        background: linear-gradient(#3388a7, #1b485a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: brightness(1.2) drop-shadow(1px 8px 30px #648899);
+        border: thick;
+    }
+    
+    .s2 {
+        background-color: rgb(119, 109, 109);
+        background-image: url('../bg.jpg');
+        background-size: cover;
+        background-origin: border-box;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    
+    #headline {
+        font-size: 60px;
+        font-family: 'Alegreya Sans';
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        background: linear-gradient(#cbcdce, #f9fafa);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: brightness(1.2) drop-shadow(1px 8px 30px #38393a);
+        border: thick;
+    }
+    /*Timer*/
+    
+    .countdown {
+        font-size: 60px;
+        font-family: 'Alegreya Sans';
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        background: linear-gradient(#cbcdce, #f9fafa);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: brightness(1.2) drop-shadow(1px 8px 30px #648899);
+        border: thick;
+    }
+    
+    @media (max-width: 320px) {
+        .countdown {
+            font-size: 2rem;
+            margin-top: 5rem;
+        }
+    }
+    
+    @media (max-width: 360px) {
+        .countdown {
+            font-size: 2.5rem;
+            margin-top: 5rem;
+        }
+    }
+    
+    .container-timer {
+        color: #333;
+        text-align: center;
+    }
+    /*End of Timer*/
+    
+    .time {
+        margin-top: 0.5rem;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        display: inline-block;
+        font-size: 1em;
+        list-style-type: none;
+        padding: 1em;
+        text-transform: uppercase;
+        font-family: 'Alegreya Sans';
+    }
+    
+    .time .ph {
+        color: white;
+        display: block;
+        font-size: 3rem;
+        width: 6.6rem;
+        padding: 1rem;
+        border-radius: 500px;
+        /* background-color: rgba(0, 0, 0, 0.493); */
+        background-image: radial-gradient(transparent, rgba(0, 0, 0, 0.637), rgb(0, 0, 0));
+        animation-name: glow;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    
+    @keyframes glow {
+        0% {
+            box-shadow: 0px 0px 1px rgba(253, 208, 61, 0.924);
+        }
+        50% {
+            box-shadow: 0px 0px 15px rgba(253, 131, 61, 0.924);
+        }
+        100% {
+            box-shadow: 0px 0px 1px rgba(246, 126, 14, 0.924);
+        }
+    }
+    
+    @media (max-width: 320px) {
+        .time .ph {
+            font-size: 2rem;
+            width: 5rem;
+            padding: 1rem;
+            margin-top: -2rem;
+            border-radius: 50%;
+        }
+    }
+    
+    @media (max-width: 360px) {
+        .time .ph {
+            font-size: 2rem;
+            width: 5.5rem;
+            padding: 1rem;
+            margin-top: -2rem;
+            border-radius: 50%;
+        }
+    }
+    
+    @media (max-width: 375px) {
+        .time .ph {
+            font-size: 2rem;
+            width: 6rem;
+            padding: 1.5rem;
+            margin-top: -2rem;
+            border-radius: 50%;
+        }
+    }
+    
+    .container-timer {
+        box-shadow: 10px 10px 10px rgba(#f1f335, #f1f335, #f1f335, 1)!important;
+    }
+    
+    .day-hour-min-sec {
+        letter-spacing: 0.2rem;
+        color: rgb(255, 255, 255);
+        text-shadow: 0px 0px 5px rgb(5, 5, 5);
+    }
+    
+    @media (max-width: 320px) {
+        .day-hour-min-sec {
+            margin-top: -1rem;
+            margin-bottom: 1rem;
+        }
+    }
+    
+    .minutes,
+    .seconds {
+        margin-right: 4rem!important;
+    }
+    
+    .iframeCustom {
+        display: none;
+        border: 0px;
+        width: inherit;
+        height: 300px;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+        overflow: hidden;
+    }
+    
+    .certificate {
+        background-image: url('../Certificate.jpg');
+        background-size: cover;
+        background-origin: border-box;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 900px 650px;
+    }
+    
+    .s3 {
+        background-image: url('../bg2.jpg');
+        background-size: cover;
+        background-origin: border-box;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+    /*Custom Button*/
+    
+    .s3 button {
+        position: absolute;
+        left: 44%;
+    }
+    
+    .btn.primary-button {
+        align-items: center;
+        width: 200px;
+        font-size: 16px;
+        font-weight: 600;
+        font-family: 'Alegreya Sans';
+        color: #fff;
+        cursor: pointer;
+        height: 55px;
+        text-align: center;
+        border: none;
+        background-size: 300% 100%;
+        border-radius: 50px;
+        background-image: linear-gradient(to right, #e62874, #ee7d53, #f7186a, #FBB03B);
+        /*box-shadow: 0 4px 10px 0 rgba(236, 116, 149, 0.75);*/
+        -moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+    
+    .btn.primary-button:hover {
+        background-position: 100% 0;
+        -moz-transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+    
+    button:focus,
+    button:active button:hover .btn:active,
+    .btn.active {
+        outline: none;
+        box-shadow: none !important;
+    }
+    
+    .s3 .Button {
+        font-family: 'Alegreya Sans';
+        /* color: black; */
+        text-decoration: none;
+        padding: 0.6rem;
+        width: 12rem;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0.15rem;
+        margin-top: 5rem;
+        border-radius: 40px 40px 40px;
+        text-shadow: 0px 0px 6px rgba(0, 0, 0, 1);
+        transition: 0.5s;
+        animation-name: spaceIn;
+        animation-duration: 3s;
+    }
+    
+    .s3 .Button:hover {
+        text-decoration: none;
+        border-radius: 0px;
+        letter-spacing: 0.2rem;
+        transform: scale(1.1, 1.1);
+        text-shadow: 0px 0px 0px black;
+        /* color: white; */
+        /* color: black; */
+    }
+    
+    .s5 p {
+        font-size: large;
+        font-family: 'Dancing Script';
+        padding-left: 150px;
+        padding-right: 140px;
+        font-weight: 700;
+    }
