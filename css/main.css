@@ -56,6 +56,19 @@
         border: thick;
     }
     
+    section h4 {
+        font-size: 30px;
+        font-family: 'Alegreya Sans';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -20%);
+        background: linear-gradient(#3388a7, #1b485a);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        filter: brightness(1.2) drop-shadow(1px 8px 30px #648899);
+        border: thick;
+    }
     .s2 {
         background-color: rgb(119, 109, 109);
         background-image: url('../bg.jpg');
