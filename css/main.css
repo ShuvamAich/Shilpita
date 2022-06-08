@@ -92,6 +92,83 @@
         filter: brightness(1.2) drop-shadow(1px 8px 30px #38393a);
         border: thick;
     }
+
+    @media only screen and ( max-width: 450px) {
+
+        #particles-js {
+            height: 100%;
+            
+            width: 300%;
+            
+        }
+
+        section h1 {
+            font-size: 60px;
+            font-family: 'Alegreya Sans';
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -20%);
+            background: linear-gradient( #3388a7, #1b485a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: brightness(1.2) drop-shadow(1px 8px 30px #5f6263);
+        }
+        
+        section h2 {
+            font-size: 50px;
+            font-family: 'Alegreya Sans';
+            position: absolute;
+            top: 40%;
+            left: 45%;
+            transform: translate(-50%, -20%);
+            background: linear-gradient(#3388a7, #1b485a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: brightness(1.2) drop-shadow(1px 8px 30px #648899);
+            border: thick;
+        }
+        
+        section h4 {
+            font-size: 20px;
+            font-family: 'Alegreya Sans';
+            
+            top: 65%;
+            left: 45%;
+            
+            background: linear-gradient(#3388a7, #1b485a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: brightness(1.2) drop-shadow(1px 8px 30px #648899);
+            border: thick;
+        }
+        .s2 {
+            background-color: rgb(119, 109, 109);
+            background-image: url('../bg.jpg');
+            background-size: cover;
+            background-origin: border-box;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        
+        #headline {
+            font-size: 60px;
+            font-family: 'Alegreya Sans';
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -20%);
+            background: linear-gradient(#cbcdce, #f9fafa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            filter: brightness(1.2) drop-shadow(1px 8px 30px #38393a);
+            border: thick;
+        }
+    
+
+    }
+
     /*Timer*/
     
     .countdown {
@@ -236,6 +313,18 @@
         background-repeat: no-repeat;
         background-size: 900px 650px;
     }
+
+    @media only screen and ( max-width: 450px) {
+        .certificate {
+            background-image: url('../Certificate20.png');
+            background-size: cover;
+            background-origin: border-box;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+    }
     
     .s3 {
         background-image: url('../bg2.jpg');
@@ -314,6 +403,93 @@
         /* color: white; */
         /* color: black; */
     }
+
+    @media only screen and ( max-width: 450px) {
+        .s3 h1{
+            top: 30%;
+        }
+
+        
+        .s3 {
+            background-image: url('../bg2.jpg');
+            background-size: cover;
+            background-origin: border-box;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        /*Custom Button*/
+        
+        .s3 button {
+            position: absolute;
+            left: 25%;
+        }
+        
+        .btn.primary-button {
+            align-items: center;
+            width: 200px;
+            font-size: 16px;
+            font-weight: 600;
+            font-family: 'Alegreya Sans';
+            color: #fff;
+            cursor: pointer;
+            height: 55px;
+            text-align: center;
+            border: none;
+            background-size: 300% 100%;
+            border-radius: 50px;
+            background-image: linear-gradient(to right, #e62874, #ee7d53, #f7186a, #FBB03B);
+            /*box-shadow: 0 4px 10px 0 rgba(236, 116, 149, 0.75);*/
+            -moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+        }
+        
+        .btn.primary-button:hover {
+            background-position: 100% 0;
+            -moz-transition: all .4s ease-in-out;
+            -o-transition: all .4s ease-in-out;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+        }
+        
+        button:focus,
+        button:active button:hover .btn:active,
+        .btn.active {
+            outline: none;
+            box-shadow: none !important;
+        }
+        
+        .s3 .Button {
+            font-family: 'Alegreya Sans';
+            /* color: black; */
+            text-decoration: none;
+            padding: 0.6rem;
+            width: 12rem;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 0.15rem;
+            margin-top: 5rem;
+            border-radius: 40px 40px 40px;
+            text-shadow: 0px 0px 6px rgba(0, 0, 0, 1);
+            transition: 0.5s;
+            animation-name: spaceIn;
+            animation-duration: 3s;
+        }
+        
+        .s3 .Button:hover {
+            text-decoration: none;
+            border-radius: 0px;
+            letter-spacing: 0.2rem;
+            transform: scale(1.1, 1.1);
+            text-shadow: 0px 0px 0px black;
+            /* color: white; */
+            /* color: black; */
+        }
+    }
+
+    
     
     .s5 p {
         font-size: large;
@@ -321,4 +497,15 @@
         padding-left: 150px;
         padding-right: 140px;
         font-weight: 700;
+    }
+
+    @media only screen and ( max-width: 450px) {
+        .s5 p {
+            font-size: 20px;
+            font-family: 'Times New Roman';
+            padding-left:30px;
+            padding-right: 100px;
+            font-weight: 7;
+        }
+
     }
